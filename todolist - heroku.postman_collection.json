@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "4c5084b6-9151-4f52-9e8c-5cef0241ddc7",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://damp-ravine-30349.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"damp-ravine-30349",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今天要刷牙2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://damp-ravine-30349.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"damp-ravine-30349",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://damp-ravine-30349.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"damp-ravine-30349",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://damp-ravine-30349.herokuapp.com/todos/ee080f28-eecf-45f6-92d3-87572c37165d",
+					"protocol": "https",
+					"host": [
+						"damp-ravine-30349",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"ee080f28-eecf-45f6-92d3-87572c37165d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://damp-ravine-30349.herokuapp.com/todos/26ed0b59-a671-4a18-8210-9bd4a44627b8",
+					"protocol": "https",
+					"host": [
+						"damp-ravine-30349",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"26ed0b59-a671-4a18-8210-9bd4a44627b8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
